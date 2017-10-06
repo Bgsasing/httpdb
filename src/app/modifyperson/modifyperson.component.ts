@@ -9,18 +9,19 @@ import { IPerson } from '../interfaces/iperson';
   styleUrls: ['./modifyperson.component.css']
 })
 export class ModifypersonComponent implements OnInit {
-  baseURL = 'https://first-project-21048.firebaseio.com';
+  
+  baseURL = 'https://appsdevproject-697e2.firebaseio.com';
   rootNode = 'people';
   refID: any;
-
+  edit= true;
   fname: string;
   lname: string;
 
   person: object;
 
   constructor(private dbService: DbService) { }
-
   ngOnInit() {
+    
   }
 
   editData(id){
